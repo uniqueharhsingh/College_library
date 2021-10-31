@@ -62,7 +62,7 @@
         <h1>BIT Library</h1>
 
 
-        <form>
+        <form id ="form">
             <div class="row mb-3">
                 <label for="bookname" class="col-sm-2 col-form-label">Name</label>
                 <div class="col-sm-10">
@@ -72,7 +72,7 @@
             <div class="row mb-3">
                 <label for="Author" class="col-sm-2 col-form-label">Author</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="Author"placeholder="Author" > 
+                    <input type="text" class="form-control" id="Author" placeholder="Author">
                 </div>
             </div>
 
@@ -80,19 +80,19 @@
                 <legend class="col-form-label col-sm-2 pt-0">Type</legend>
                 <div class="col-sm-10">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="type" id=" Fiction" value=" Fiction"
-                            checked>
+                        <input class="form-check-input" type="radio" name="type" id=" Fiction" value=" Fiction" checked>
                         <label class="form-check-label" for="Fiction">
                             Fiction
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="type" id="Computer Programming" value="Computer Programming">
+                        <input class="form-check-input" type="radio" name="type" id="Computer Programming"
+                            value="Computer Programming">
                         <label class="form-check-label" for="Computer Programming">
                             Computer Programming
                         </label>
                     </div>
-                    <div class="form-check disabled">
+                    <div class="form-check">
                         <input class="form-check-input" type="radio" name="type" id="Cooking" value="Cooking">
                         <label class="form-check-label" for="Cooking">
                             Cooking
@@ -101,16 +101,39 @@
                 </div>
             </fieldset>
 
-            <div class="row mb-3">
-                <div class="col-sm-10 offset-sm-2">
-                    <div class="form-check">
-                    </div>
-                </div>
-            </div>
             <hr>
             <button type="submit" class="btn btn-primary">Add Books</button>
         </form>
+
+        <div id="table">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+
+
+
     </div>
+
+    <script src="index.js"></script>
+
+
 
 
 
