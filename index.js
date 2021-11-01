@@ -1,94 +1,57 @@
-console.log("In this We are creating a projects this is tutorial 33")
+console.log("in this we are creating a projects")
+//Creating Constrctor
 
-//Creating Protypes using Constrctor
 function Book(name,author,type){
     this.name=name;
     this.author=author;
-    this.type=type;
-
+    this.type=type
 }
 
-
-//Adding method to display constructor
-function Display() {
-
-}
+//display Constrtctor
 
 
-//Adding Method to display protoype
-// Add submit event listener to libraryForm
-let libraryForm = document.getElementById('libraryForm');
-libraryForm.AddEventListener('submit', libraryFormSubmit);
+//
 
-function libraryFormSubmit(e) {
-    console.log('YOu have submitted library form');
-    let name = document.getElementById('bookName').value;
-    let author = document.getElementById('author').value;
+
+
+
+//Add submit Event Listner TO libraryform
+
+let libraryform=document.getElementById("libraryform")
+libraryform.addEventListener("submit", libraryFormSubmit);
+
+function libraryFormSubmit(e){
+    
+    console.log("You Have Been Clicked ")
+    let name=document.getElementById("").value;
+    let author=document.getElementById("").value;
     let type;
-    let fiction = document.getElementById('fiction');
-    let programming = document.getElementById('programming');
-    let cooking = document.getElementById('cooking');
 
-    if (fiction.checked) {
-        type = fiction.value;
+    let  Fiction=document.getElementById("Fiction")
+    let Programming=document.getElementById("Programming")
+    let  Cooking=document.getElementById("Cooking")
+
+    if(Fiction.checked){
+        type=Fiction.value
     }
-    else if (computerprogramming.checked) {
-        type = computerprogramming.value;
+    else if(Programming.checked){
+        type=Programming.value
     }
-    else if (cooking.checked) {
-        type = cooking.value;
+    else if(Cooking.checked){
+        type=Cooking.checked
     }
 
-    let book = new Book(name, author, type);
-    console.log(book);
+    let book=new Book(name,author,type)
+    console.log(book)
 
-    e.preventDefault();
-
-
+    
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
+    e.preventDefault()
+  
  
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

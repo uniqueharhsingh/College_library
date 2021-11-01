@@ -60,8 +60,6 @@
     <div class="container">
         <br>
         <h1>BIT Library</h1>
-
-
         <form id ="libraryform">
             <div class="row mb-3">
                 <label for="bookname" class="col-sm-2 col-form-label">Name</label>
@@ -70,12 +68,11 @@
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="Author" class="col-sm-2 col-form-label">Author</label>
+                <label for="Author" class="col-sm-2 col-form-label">author</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="Author" placeholder="Author">
+                    <input type="text" class="form-control" id="author" placeholder="author">
                 </div>
             </div>
-
             <fieldset class="row mb-3">
                 <legend class="col-form-label col-sm-2 pt-0">Type</legend>
                 <div class="col-sm-10">
@@ -89,7 +86,7 @@
                         <input class="form-check-input" type="radio" name="type" id="Programming"
                             value="Programming">
                         <label class="form-check-label" for="Programming">
-                            Programming
+                            Computer Programming
                         </label>
                     </div>
                     <div class="form-check">
@@ -101,9 +98,15 @@
                 </div>
             </fieldset>
 
+
             <hr>
+            <div class="form-group row">
+                <div class="col-sm-10">
             <button type="submit" class="btn btn-primary">Add Book</button>
+            </div>
+            </div>
         </form>
+
 
         <div id="table">
             <table class="table">
