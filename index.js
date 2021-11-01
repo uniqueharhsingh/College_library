@@ -8,46 +8,45 @@ function Book(name,author,type){
 
 }
 
+
 //Adding method to display constructor
+function Display() {
+
+}
 
 
 //Adding Method to display protoype
+// Add submit event listener to libraryForm
+let libraryForm = document.getElementById('libraryForm');
+libraryForm.AddEventListener('submit', libraryFormSubmit);
 
-
-//Adding submit event listner to the libraryform
-
-let libraryform=document.getElementById("libraryform")
-libraryform.addEventListener("submit",libraryformsubmit);
-
-function libraryformsubmit(e){
-    e.preventDefault()
-    console.log("You Have been CLiked");
-
-    let name=document.getElementById("bookname").value;
-    let author=document.getElementById("author").value;
-    
+function libraryFormSubmit(e) {
+    console.log('YOu have submitted library form');
+    let name = document.getElementById('bookName').value;
+    let author = document.getElementById('author').value;
     let type;
+    let fiction = document.getElementById('fiction');
+    let programming = document.getElementById('programming');
+    let cooking = document.getElementById('cooking');
 
-    //Finction,cooking,Computer programming
-
-    let Fiction=document.getElementById("Fiction");
-    let computerProgramming=document.getElementById("ComputerProgramming");
-    let cooking=document.getElementById("cooking");
-
-    if (Fiction.checked){
-        type=Fiction.value;
+    if (fiction.checked) {
+        type = fiction.value;
     }
-    else if (cooking.checked){
-        type=cooking.value
-
+    else if (computerprogramming.checked) {
+        type = computerprogramming.value;
     }
-    else if(computerProgramming.checked){
-        type=computerProgramming.value
+    else if (cooking.checked) {
+        type = cooking.value;
     }
 
+    let book = new Book(name, author, type);
+    console.log(book);
 
-    let Books=new Book(name,author,type)
-    console.log(Books);
+    e.preventDefault();
+
+
+
+
 
 
 
