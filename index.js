@@ -20,11 +20,11 @@ function Book(name,author,type){
 let libraryform=document.getElementById("libraryform")
 libraryform.addEventListener("submit", libraryFormSubmit);
 
-function libraryFormSubmit(e){
+function libraryFormSubmit(e) {
     
     console.log("You Have Been Clicked ")
-    let name=document.getElementById("").value;
-    let author=document.getElementById("").value;
+    let name=document.getElementById("name").value;
+    let author=document.getElementById("Author").value;
     let type;
 
     let  Fiction=document.getElementById("Fiction")
@@ -44,7 +44,7 @@ function libraryFormSubmit(e){
     let book=new Book(name,author,type)
     console.log(book)
 
-    
+
 
 
     e.preventDefault()
